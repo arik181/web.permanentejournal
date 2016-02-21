@@ -1,0 +1,34 @@
+.table-actions {
+  @include border-radius(5px !important);
+}
+
+.action-group a,
+.action-group div { margin-bottom: 18px; }
+
+/************************************************
+ *  RESPONSIVE
+ ************************************************/
+
+/* ----- X-Small ----- */
+@media screen and (max-width:$screen-xs-max)
+{
+  .btn-lg { font-size: 4vw; }
+}
+
+/* ----- Small ----- */
+@media screen and (min-width:$screen-sm-min)
+{
+  .btn-lg { font-size: 30px; }
+}
+
+/* ----- Medium ----- */
+@media screen and (min-width:$screen-md-min)
+{
+  .btn-lg { font-size: 30px; }
+}
+
+/* ----- Large ----- */
+@media screen and (min-width:$screen-lg-min)
+{
+  .btn-lg { font-size: 30px; }
+}

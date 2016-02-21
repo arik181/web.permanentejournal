@@ -1,0 +1,17 @@
+/************************************************
+ *  NAV
+ ************************************************/
+.navbar {
+  height: 48px;
+  color: $gray_dark;
+  line-height: 50px;
+  h1 {
+    color: $med_grey;
+    margin: 0;
+    line-height: 50px;
+    font-size: 22px;
+  }
+}
+
+a.back { font-size: 16px; color: $blue_link; }
+p.back { font-size: 16px; color: $blue_link; }

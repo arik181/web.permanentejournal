@@ -1,0 +1,58 @@
+form {
+  .form-desc {
+    color: $dark_blue;
+    margin-bottom: 40px;
+    p { font-size: 4.5vmin; }
+  }
+  h3 { margin:7px 0 0 0;  }
+}
+
+.input-transparent {
+  background-color: transparent;
+  border-top: none; border-right: none; border-left: none;
+  padding-left:0px;
+  @include border-radius(0);
+  @include box-shadow(none);
+}
+
+.input-responsive-lg {
+  width: 100%;
+  font-size: 28px;
+  height: 46px;
+  padding-top: 10px; padding-bottom: 0;
+  line-height: 1.33;
+}
+
+.form-split {
+  border-bottom: 1px $dark_blue solid;
+}
+
+
+
+/************************************************
+ *  RESPONSIVE
+ ************************************************/
+
+/* ----- X-Small ----- */
+@media screen and (max-width:$screen-xs-max)
+{
+  .input-responsive-lg { font-size:3.9vw; }
+  .answer-label { font-size: 2.5vw; }
+}
+
+/* ----- Small ----- */
+@media screen and (min-width:$screen-sm-min)
+{
+  .answer-label { font-size: 18px }
+}
+
+/* ----- Medium ----- */
+@media screen and (min-width:$screen-md-min)
+{
+}
+
+/* ----- Large ----- */
+@media screen and (min-width:$screen-lg-min)
+{
+}
+

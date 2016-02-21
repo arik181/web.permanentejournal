@@ -1,0 +1,12 @@
+.list-group{
+  .list-group-item {
+    padding-top: 24px;
+    @include border-radius(0 !important);
+  }
+}
+
+.list-striped {
+  background-color: transparent;
+  .list-group-item { border: none; }
+  li:nth-of-type(odd) { background: $light_grey; }
+}

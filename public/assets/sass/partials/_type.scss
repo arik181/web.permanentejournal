@@ -1,0 +1,49 @@
+/************************************************
+ *  HEADINGS
+ ************************************************/
+
+ h3, .h3 { color: $dark_blue; font-weight: bold;}
+
+/************************************************
+ *  BODY TEXT
+ ************************************************/
+
+/************************************************
+ *  EMPHASIS & MISC
+ ************************************************/
+.red-accent, a.red-accent { color: $red !important; }
+.blue-accent, a.blue-accent { color: $dark_blue !important; }
+
+
+/************************************************
+ *  RESPONSIVE
+ ************************************************/
+@media screen and (max-width:$screen-xs-max)
+{
+  p { font-size: 4vw; }
+  h3, .h3 { font-size: 5vw; }
+}
+
+/* ----- X-Small ----- */
+@media screen and (min-width:$screen-xs-min)
+{
+  p { font-size: 18px; }
+  h3, .h3 { font-size: 20px; }
+}
+
+/* ----- Small ----- */
+@media screen and (min-width:$screen-sm-min)
+{
+  p{ font-size:20px; }
+  h3, .h3 { font-size: 22px; }
+}
+
+/* ----- Medium ----- */
+@media screen and (min-width:$screen-md-min)
+{
+}
+
+/* ----- Large ----- */
+@media screen and (min-width:$screen-lg-min)
+{
+}

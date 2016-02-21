@@ -1,0 +1,54 @@
+/************************************************
+ *  CONTENT
+ ************************************************/
+ main {
+   > .row {
+     padding-top: 50px;
+   }
+ }
+
+.action-group { text-transform: uppercase; }
+
+.results {
+  .action-group { width:80%; max-width:470px; }
+}
+
+
+/* ***** Quiz ***** */
+.quiz-questions {
+  label { font-size:4vw; }
+  label > span { font-size:5vw; }
+}
+
+
+/************************************************
+ *  RESPONSIVE
+ ************************************************/
+@media screen and (max-width:$screen-xs-max)
+{
+}
+
+/* ----- X-Small ----- */
+@media screen and (min-width:$screen-xs-min)
+{
+}
+
+/* ----- Small ----- */
+@media screen and (min-width:$screen-sm-min)
+{
+}
+
+/* ----- Medium ----- */
+@media screen and (min-width:$screen-md-min)
+{
+}
+
+/* ----- Large ----- */
+@media screen and (min-width:$screen-lg-min)
+{
+}
+
+
+
+
+

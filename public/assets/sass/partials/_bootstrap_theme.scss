@@ -1,0 +1,154 @@
+/* Bootstrap theme colors */
+
+.caption {
+  h3 { color:#818181; font-size: 18px; }
+  color:#818181 !important; min-height: 180px;
+}
+
+/************************************************
+ *  NAV
+ ************************************************/
+ nav {
+    .navbar-toggle {
+      border: none;
+      padding: 8px 0;
+      margin-right: 0 !important;
+      .icon-bar {
+        background-color: $dark_blue;
+        width: 28px; height: 3px;
+        @include border-radius(50px);
+      }
+    }
+    .nav {
+      background-color: $dark_blue;
+      padding-bottom:40px;
+      li {
+        ~li {
+          border-top: tint($dark_blue, 40) 1px solid;
+        }
+        a {
+          font-size: 16px; font-size: 4vmin;
+          padding-left: 50px;
+          color: $white;
+          line-height: 10vmin;
+        }
+        a:hover {
+          background-color: tint($dark_blue, 10)!important;
+        }
+        .pull-left.fa {
+          margin-left:-30px;
+        }
+        i {
+          width: 30px;
+          text-align: center;
+          font-size: 16px; font-size: 4.5vmin;
+          line-height:10vmin;
+        }
+      }
+    }
+ }
+ .navbar-gradient {
+   @include background-image(linear-gradient(#fff,#f2f5f7 80%, #e2e5e9));
+ }
+
+/************************************************
+*  BUTTONS
+************************************************/
+.btn:active, .btn.active {
+  background-image: none;
+}
+
+/* Button Styles */
+.btn-default, a.btn-default {
+  background-color: $light_grey;
+  border: $light_grey 1px solid;
+  color: $dark_blue;
+  @include border-radius(100px);
+}
+.btn-default:hover, .btn-default:focus {
+  background-color: $light_grey;
+  background-position: 0 -15px;
+}
+.btn-default:active, .btn-default.active {
+  background-color: $light_grey;
+  border-color: $light_grey;
+}
+.btn-default:disabled, .btn-default[disabled] {
+  background-color: $light_grey;
+  background-image: $light_grey;
+}
+
+.btn-primary, a.btn-primary {
+  background-color: $dark_blue;
+
+  color: $white !important;
+  @include border-radius(100px);
+}
+.btn-primary:hover, .btn-primary:focus {
+  background-color: $dark_blue;
+  background-position: 0 -15px;
+}
+.btn-primary:active, .btn-primary.active {
+  background-color: $dark_blue;
+  border-color: $dark_blue;
+}
+.btn-primary:disabled, .btn-primary[disabled] {
+  background-color: $dark_blue;
+  background-image: $dark_blue;
+}
+
+.btn-primary-tint {
+  background-color:  tint($dark_blue, 40) !important;
+  border:  tint($dark_blue, 40) 1px solid;
+}
+
+.btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
+  background-color:  tint($dark_blue, 40);
+  border:  tint($dark_blue, 40) 1px solid;
+}
+
+.input-group-btn .btn {
+  line-height: 1.45;
+  @include border-radius(5px);
+}
+
+/************************************************
+*  Tables
+************************************************/
+table.dataTable { border-bottom: #99c7d7 1px solid; margin-bottom: 15px; }
+
+.table.dataTable thead th, table.dataTable thead td {
+  border:none;
+  color: #016e95;
+}
+
+.table-striped > tbody > tr:nth-child(odd){
+  background-color: #ecf5f8;
+}
+
+.table > tbody > tr > td{
+  color: #909090;
+}
+.table > tbody > tr > td a{
+  color: #016e95;
+}
+
+.table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
+  border-top: #99c7d7 2px solid;
+  padding: 8px 10px !important;
+}
+
+/************************************************
+*  LIST GROUPS
+************************************************/
+.list-group.nav {
+  .list-group-item {
+    @include border-radius(0);
+    padding:1px 0;
+    a {
+      color: $blue_link;
+      font-size: 16px; font-size: 4vmin;
+      background-color: $super_light_grey !important;
+    }
+  }
+}

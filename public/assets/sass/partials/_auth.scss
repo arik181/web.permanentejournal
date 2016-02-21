@@ -1,0 +1,74 @@
+/************************************************
+ *  LOGIN / Signup
+ ************************************************/
+.login {
+  .action-group{
+    margin-top: 100px;
+    width: 75%;
+  }
+}
+.forgot {
+  .action-group{
+    margin-top: 100px;
+    width: 70% !important;
+  }
+}
+.register {
+  .action-group{
+    margin-top: 60px;
+  }
+}
+
+.user-auth {
+  width:90%; max-width: 450px; margin:auto;
+  input[type="text"], input[type="password"] {
+    border-bottom-color: $medium_blue;
+    @include input-placeholder { color: $light_blue; }
+  }
+  .login-actions {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 22px;
+    white-space: nowrap;
+    text-transform: UPPERCASE;
+    .white { color: $white; @include text-shadow(rgba($mega_dark_blue, 0.2) 1px 1px 0, rgba($mega_dark_blue, 0.2) 1px 1px 0, rgba($mega_dark_blue, 0.2) 1px 1px 0); }
+    .blue { color: $mega_dark_blue; @include text-shadow(rgba($white, 0.1) 1px 1px 0, rgba($white, 0.1) 1px 1px 0, rgba($white, 0.1) 1px 1px 0); }
+  }
+  .action-group { width:50%; }
+}
+
+/************************************************
+ *  RESPONSIVE
+ ************************************************/
+@media screen and (max-width:$screen-xs-max)
+{
+  .user-auth {
+    .login-actions { font-size: 4.5vw; }
+  }
+}
+
+/* ----- X-Small ----- */
+@media screen and (min-width:$screen-xs-min)
+{
+  .user-auth {
+    .login-actions { font-size: 22px; }
+  }
+}
+
+/* ----- Small ----- */
+@media screen and (min-width:$screen-sm-min)
+{
+  .user-auth {
+    .login-actions { font-size:26px; }
+  }
+}
+
+/* ----- Medium ----- */
+@media screen and (min-width:$screen-md-min)
+{
+}
+
+/* ----- Large ----- */
+@media screen and (min-width:$screen-lg-min)
+{
+}

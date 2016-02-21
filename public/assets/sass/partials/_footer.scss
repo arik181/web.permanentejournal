@@ -1,0 +1,10 @@
+/************************************************
+ *  HEADINGS
+ ************************************************/
+
+ @include sticky-footer(308px, "main", ".sticky-foot", "footer");
+.sticky-footer { overflow: hidden; }
+
+ .quiz-questions {
+   @include sticky-footer(100px, "main", ".sticky-foot", "footer");
+ }

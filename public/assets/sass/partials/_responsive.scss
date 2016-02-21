@@ -1,0 +1,60 @@
+
+
+@media screen and (max-width:$screen-xs-max)
+{
+  .bg-mtn {
+    h2 { font-size:12px !important;  font-size:4.5vw !important; }
+  }
+  body.bg-mtn { background: url(../images/bg-bluemtn_md.png) no-repeat top center; height: 100%;
+    @include background-size(cover);
+  }
+  body.login { background: url(../images/bg-bluemtn_lg.png) no-repeat  -10px -10vw;
+    @include background-size(auto);
+  }
+  .action-group { width: 65%; max-width: 320px; }
+}
+
+@media screen and (min-width:$screen-sm-min)
+{
+  .navbar-toggle {
+    display:inline !important;
+  }
+  .bg-mtn {
+    h2 { font-size: 30px; }
+  }
+  body.bg-mtn { background: url(../images/bg-bluemtn_lg.png) no-repeat top center; height: 100%;
+    @include background-size(auto);
+  }
+  body.login { background-position: -40vmin -4vmin; }
+  .action-group { width: 320px; }
+}
+
+@media screen and (min-width:$screen-md-min)
+{
+  .navbar-toggle {
+    display:inline !important;
+  }
+  .bg-mtn {
+    h2 { font-size: 30px; }
+  }
+  body.bg-mtn { background: url(../images/bg-bluemtn_lg.png) no-repeat top center; height: 100%;
+    @include background-size(auto);
+  }
+  body.login { background-position: 0 -3vmin; }
+  .action-group { width: 320px; }
+}
+
+@media screen and (min-width:$screen-lg-min)
+{
+  .navbar-toggle {
+    display:inline !important;
+  }
+  .bg-mtn {
+    h2 { font-size: 3vw; }
+  }
+  body.bg-mtn { background: url(../images/bg-bluemtn_lg.png) no-repeat top center; height: 100%;
+    @include background-size(cover);
+  }
+  body.login { background-position: 0 10vmin; }
+  .action-group { width: 30%; }
+}

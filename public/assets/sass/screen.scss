@@ -1,0 +1,105 @@
+// Third-party
+@import "vendor/bootstrap";
+@import "vendor/font-awesome";
+
+// Modules and Variables
+@import "partials/base";
+@import "partials/responsive";
+@import "partials/auth";
+@import "partials/forms";
+@import "partials/buttons";
+@import "partials/type";
+@import "partials/list-group";
+@import "partials/nav";
+
+// Layout
+@import "partials/navbar";
+@import "partials/content";
+@import "partials/footer";
+@import "partials/bootstrap_theme";
+
+// Partials
+
+/************************************************
+ *  OVERALL
+ ************************************************/
+ body { height: auto !important; }
+ html, body { background-color: $super_light_grey; color: #575757; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; }
+ body.quiz-welcome h2 { color: #3ca2c8; margin-bottom:10px; text-transform: UPPERCASE; }
+ body.quiz-welcome .large { font-size:2em; color: #0079aa; text-transform:none; }
+
+ html {
+   @include background-image(linear-gradient(#fff, #fff 45%, #779dd1 55%, #779dd1));
+ }
+
+.box { @include border-radius(10px); }
+
+/************************************************
+ *  GENERICS
+ ************************************************/
+
+.no-wrap { white-space: nowrap !important; }
+.caret-block { display: block; text-align: center; }
+
+.show-grid-xs { margin-bottom:10px !important; }
+.show-grid-sm { margin-bottom:15px !important; }
+.show-grid-md { margin-bottom:30px !important; }
+
+.show-grid-top-xs { margin-top:10px !important; }
+.show-grid-top-sm { margin-top:15px !important; }
+.show-grid-top-md { margin-top:30px !important; }
+
+.form-group-sm { min-height: 30px;}
+.form-group-sm-head { line-height: 30px; padding-bottom: 0; }
+.form-group-sm-push { line-height: 30px; min-height: 53px; padding-top: 22px; }
+.multi-line-label { margin-top:0 !important;padding-top:0 !important;line-height:15px; }
+
+
+
+/************************************************
+ *  HEADER
+ ************************************************/
+
+/************************************************
+ *  FOOTER
+ ************************************************/
+ footer { padding: 8px 0; }
+
+/************************************************
+*  ADMIN - TODO: move to admin css
+************************************************/
+.admin-nav {
+  height:36px; min-height: 36px; line-height: 36px;
+  background-color: $dark_blue;
+  @include border-radius(0 !important);
+  a { color: #ffffff; text-decoration: none; }
+  ul{
+    margin: 0;
+    li { line-height: 36px; font-size: 14px; padding: 0 8px; }
+  }
+}
+
+.nav {
+    padding-bottom : 0px !important;
+}
+
+body.login main { margin-bottom: 0 !important; }
+
+main.admin {
+  padding-top: 15px !important;
+  header {
+    padding: 0 !important;
+  }
+
+  label { color: $dark_blue; }
+
+  h2 { color: $dark_blue; }
+}
+
+.blue { color: $dark_blue; }
+
+.admin-cell { min-width: 160px ; }
+
+.disabled {
+    color: #99B4D3 !important;
+}
